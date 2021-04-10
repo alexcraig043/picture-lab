@@ -44,7 +44,48 @@ public class IntArrayWorker
     }
     return total;
   }
+
+  public int getCount(int target)
+  {
+    int count = 0;
+    for (int row = 0; row < matrix.length; row++)
+    {
+      for (int col = 0; col < matrix[0].length; col++) 
+      {
+        if (matrix[row][col] == target)
+        {
+          count++;
+        }
+      }
+    }
+    return count;
+  }
+
+  public int getLargest() 
+  {
+    int largest = 0;
+    for (int row = 0; row < matrix.length; row++)
+    {
+      for (int col = 0; col < matrix[0].length; col++) 
+      {
+        if (matrix[row][col] > largest)
+        {
+          largest = matrix[row][col];
+        }
+      }
+    }
+    return largest;
+  }
   
+  public int getColTotal(int col)
+  {
+    int colTotal = 0;
+    for (int row = 0; row < matrix.length; row++) {
+      colTotal += matrix[row][col];
+    }
+    return colTotal;
+  }
+
   /**
    * Method to fill with an increasing count
    */
@@ -77,7 +118,6 @@ public class IntArrayWorker
     }
     System.out.println();
   }
-  
   
   /** 
    * fill the array with a pattern

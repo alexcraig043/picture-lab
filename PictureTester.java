@@ -16,7 +16,39 @@ public class PictureTester
     beach.zeroBlue();
     beach.explore();
   }
+
+  public static void testKeepOnlyBlue()
+  {
+    Picture gorge = new Picture("images/gorge.jpg");
+    gorge.explore();
+    gorge.keepOnlyBlue();
+    gorge.explore();
+  }
+
+  public static void testNegate()
+  {
+    Picture koala = new Picture("images/koala.jpg");
+    koala.explore();
+    koala.negate();
+    koala.explore();
+  }
+
+  public static void testGrayscale()
+  {
+    Picture lion = new Picture("images/femaleLionAndHall.jpg");
+    lion.explore();
+    lion.grayscale();
+    lion.explore();
+  }
   
+  public static void testFixUnderwater()
+  {
+    Picture water = new Picture("images/water.jpg");
+    water.explore();
+    water.fixUnderwater();
+    water.explore();
+  }
+
   /** Method to test mirrorVertical */
   public static void testMirrorVertical()
   {
@@ -38,7 +70,7 @@ public class PictureTester
   /** Method to test the collage method */
   public static void testCollage()
   {
-    Picture canvas = new Picture("images/640x480.jpg");
+    Picture canvas = new Picture("images/water.jpg");
     canvas.createCollage();
     canvas.explore();
   }
@@ -53,32 +85,32 @@ public class PictureTester
   
   /** Main method for testing.  Every class can have a main
     * method in Java */
-  public static void main(String[] args)
+  public static void runTests()
   {
-    // uncomment a call here to run a test
-    // and comment out the ones you don't want
-    // to run
-    testZeroBlue();
-    //testKeepOnlyBlue();
-    //testKeepOnlyRed();
-    //testKeepOnlyGreen();
-    //testNegate();
-    //testGrayscale();
-    //testFixUnderwater();
-    //testMirrorVertical();
-    //testMirrorTemple();
-    //testMirrorArms();
-    //testMirrorGull();
-    //testMirrorDiagonal();
-    //testCollage();
-    //testCopy();
-    //testEdgeDetection();
-    //testEdgeDetection2();
-    //testChromakey();
-    //testEncodeAndDecode();
-    //testGetCountRedOverValue(250);
-    //testSetRedToHalfValueInTopHalf();
-    //testClearBlueOverValue(200);
-    //testGetAverageForColumn(0);
+    /** uncomment a call here to run a test
+    and comment out the ones you don't want
+    to run */
+    // testZeroBlue();
+    // testKeepOnlyBlue();
+    // testKeepOnlyRed();
+    // testKeepOnlyGreen();
+    // testNegate();
+    // testGrayscale();
+    // testFixUnderwater();
+    // testMirrorVertical();
+    // testMirrorTemple();
+    // testMirrorArms();
+    // testMirrorGull();
+    // testMirrorDiagonal();
+    // testCollage();
+    // testCopy();
+    // testEdgeDetection();
+    // testEdgeDetection2();
+    // testChromakey();
+    // testEncodeAndDecode();
+    // testGetCountRedOverValue(250);
+    // testSetRedToHalfValueInTopHalf();
+    // testClearBlueOverValue(200);
+    // testGetAverageForColumn(0);
   }
 }
