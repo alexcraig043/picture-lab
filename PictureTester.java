@@ -6,73 +6,83 @@
  * 
  * @author Barbara Ericson 
  */
-public class PictureTester
-{
-  /** Method to test zeroBlue */
-  public static void testZeroBlue()
-  {
+public class PictureTester {
+  /**
+   * Method to test zeroBlue
+   */
+  public static void testZeroBlue() {
     Picture beach = new Picture("images/beach.jpg");
     beach.explore();
     beach.zeroBlue();
     beach.explore();
   }
 
-  public static void testKeepOnlyBlue()
-  {
+  public static void testKeepOnlyBlue() {
     Picture gorge = new Picture("images/gorge.jpg");
     gorge.explore();
     gorge.keepOnlyBlue();
     gorge.explore();
   }
 
-  public static void testNegate()
-  {
+  public static void testNegate() {
     Picture koala = new Picture("images/koala.jpg");
     koala.explore();
     koala.negate();
     koala.explore();
   }
 
-  public static void testGrayscale()
-  {
+  public static void testGrayscale() {
     Picture lion = new Picture("images/femaleLionAndHall.jpg");
     lion.explore();
     lion.grayscale();
     lion.explore();
   }
-  
-  public static void testFixUnderwater()
-  {
+
+  public static void testFixUnderwater() {
     Picture water = new Picture("images/water.jpg");
     water.explore();
     water.fixUnderwater();
     water.explore();
   }
 
-  /** Method to test mirrorVertical */
-  public static void testMirrorVertical()
-  {
+  /**
+   * Method to test mirrorVertical
+   */
+  public static void testMirrorVertical() {
     Picture caterpillar = new Picture("images/caterpillar.jpg");
     caterpillar.explore();
     caterpillar.mirrorVertical();
     caterpillar.explore();
   }
 
-  public static void testMirrorVerticalRightToLeft()
-  {
+  public static void testMirrorVerticalRightToLeft() {
     Picture caterpillar = new Picture("images/caterpillar.jpg");
     caterpillar.explore();
     caterpillar.mirrorVerticalRightToLeft();
     caterpillar.explore();
   }
 
-  public static void testMirrorHorizontal()
-  {
+  public static void testMirrorHorizontal() {
     Picture arch = new Picture("images/arch.jpg");
     arch.explore();
     arch.mirrorHorizontal();
     arch.explore();
   }
+
+  public static void testMirrorHorizontalBotToTop() {
+    Picture arch = new Picture("images/arch.jpg");
+    arch.explore();
+    arch.mirrorHorizontalBotToTop();
+    arch.explore();
+  }
+
+  public static void testMirrorDiagonal() {
+    Picture gull = new Picture("images/seagull.jpg");
+    gull.explore();
+    gull.mirrorDiagonal();
+    gull.explore();
+  }
+
   
   /** Method to test mirrorTemple */
   public static void testMirrorTemple()
