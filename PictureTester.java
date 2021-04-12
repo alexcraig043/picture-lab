@@ -57,6 +57,22 @@ public class PictureTester
     caterpillar.mirrorVertical();
     caterpillar.explore();
   }
+
+  public static void testMirrorVerticalRightToLeft()
+  {
+    Picture caterpillar = new Picture("images/caterpillar.jpg");
+    caterpillar.explore();
+    caterpillar.mirrorVerticalRightToLeft();
+    caterpillar.explore();
+  }
+
+  public static void testMirrorHorizontal()
+  {
+    Picture arch = new Picture("images/arch.jpg");
+    arch.explore();
+    arch.mirrorHorizontal();
+    arch.explore();
+  }
   
   /** Method to test mirrorTemple */
   public static void testMirrorTemple()

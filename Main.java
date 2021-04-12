@@ -12,11 +12,15 @@
       /** Uncomment for A4: */
       // IntArrayWorkerTester.runTests();
 
-      /** Uncomment for A5: */
+      /** Uncomment for A5 (test one at a time): */
       // PictureTester.testZeroBlue();
       // PictureTester.testKeepOnlyBlue();
       // PictureTester.testNegate();
       // PictureTester.testGrayscale();
-      PictureTester.testFixUnderwater();
+      // PictureTester.testFixUnderwater();
+
+      /** Uncomment for A6 (test one at a time)*/
+      // PictureTester.testMirrorVerticalRightToLeft();
+      PictureTester.testMirrorHorizontal();
     }
 }
